@@ -1,0 +1,272 @@
+.main{
+    width: 700px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    flex-grow: auto;
+}
+
+
+.feed{
+    width: 100%;
+    border-right: 1px solid var(--twitter-background);
+    overflow-y: scroll;
+
+}
+
+.feed-header{
+    position: static;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    border-bottom: 1px solid var(--twitter-background);
+    background-color: white;
+    z-index: 10;
+}
+
+.feed-header button{
+    width: 300px;
+    background-color: white;
+    border: none;
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.feed-header button:hover{
+    background-color: var(--twitter-background);
+    height: 100%;
+}
+
+.material-icons.setting{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.material-icons.setting:hover{
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+}
+
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+.feed::-webkit-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: 0;
+}
+
+/* tweetbox */
+.tweetbox__avatar img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tweetBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetbox__input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.tweetbox__input input{
+    flex: 1;
+    font-size: 20px;
+    color: gray;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.tweetbox__input.specials{
+    width: 100%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.tweetbox__input.specials .material-icons{
+    color: var(--twitter-color);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.tweetbox__input.specials button{
+    background-color: var(--twitter-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    height: 35px;
+    width: 64px;
+    font-weight: 900;
+    filter: opacity(0.8);
+    cursor: default;
+}
+
+.tweetbox__input.specials .material-icons.location{
+    filter: opacity(0.8);
+    cursor: default;
+    margin-right: 300px;
+}
+
+.tweetBox{
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* post notifications */
+.post__notifications{
+    height: 50px;
+    border-bottom: 1px solid var(--twitter-background);
+    color: var(--twitter-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.post__notifications:hover{
+    background-color: var(--twitter-background);
+}
+
+/* post */
+.post{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid var(--twitter-background);
+    cursor: pointer;
+}
+
+.post__avatar img{
+    border-radius: 50%;
+    height: 40px;
+}
+
+.post__avatar{
+    margin-right: 10px;
+}
+
+.post__body{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post__header{
+    width: 100%;
+    display: flex;
+}
+
+.post__header.text p{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.post__header.text p:hover{
+    text-decoration: underline;
+}
+
+.post__header.text span{
+    color: gray;
+    font-weight: 600;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.post__header.text .material-icons.verified{
+    color: var(--twitter-color);
+    font-size: 18px;
+    margin-left: 0;
+}
+
+.post__header .material-icons.more{
+    color: var(--twitter-color);
+    cursor: pointer;
+}
+
+.post__body.text p{
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.post__footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__footer i{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rightsection{
+    display: inline-flex;
+}
+
+.rightsection i{
+    margin-left: 20px;
+}
+
+.post__footer i p{
+    font-size: 10px;
+    font-family: inherit;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.post__avatar button{
+    background-color: gray;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.post:hover{
+    background-color: var(--twitter-background);
+}
+
+.post__body.text div{
+    margin-bottom: 15px;
+}
+
+.list ul{
+    list-style-position: inside;
+}
+
+.list ul li span{
+    position: relative;
+    left: -14px;
+}
+
+.pratham_img{
+    width: 500px;
+    object-fit: contain;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}

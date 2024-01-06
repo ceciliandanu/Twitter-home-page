@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Twitter Clone</title>
+
+        <link rel="stylesheet" href="Styles/general.css">
+        <link rel="stylesheet" href="Styles/sidebar.css">
+        <link rel="stylesheet" href="Styles/feed.css">
+        <link rel="stylesheet" href="Styles/widgets.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="left-sidebar">
+                <div class="sidebar">
+                    <div class="sidebarlogo">
+                        <i class="fa-brands fa-x-twitter header"></i>
+                    </div>
+                    <div class="sidebarOptions active">
+                        <span class="material-icons">
+                            home
+                        </span>
+                        <h2>Home</h2>
+                    </div>
+
+                    <div class="sidebarOptions">
+                        <span class="material-icons">
+                            search
+                        </span>
+                        <h2>Explore</h2>
+                    </div>
+
+                    <div class="sidebarOptions">
+                        <span class="material-icons">
+                            notifications_none
+                        </span>
+                        <h2>Notifications</h2>
+                    </div>
+
+                    <div class="sidebarOptions">
+                        <span class="material-icons">
+                            mail_outline
+                        </span>
+                        <h2>Messages</h2>
+                    </div>
+
+                    <div class="sidebarOptions">
+                        <span class="material-icons">
+                            list_alt
+                        </span>
+                        <h2>List</h2>
+                    </div>
+
+                    <div class="sidebarOptions">
+                        <span class="material-icons">
+                            bookmark_border
+                        </span>
+                        <h2>Bookmarks</h2>
+                    </div>
+
+                    <div class="sidebarOptions">
+                        <span class="material-icons">
+                            people_outline
+                        </span>
+                        <h2>Communities</h2>
+                    </div>
+
+                    <div class="sidebarOptions">
+                        <i class="fa-brands fa-x-twitter icon"></i>
+                        <h2>Premium</h2>
+                    </div>
+
+                    <div class="sidebarOptions">
+                        <span class="material-icons">
+                            perm_identity
+                        </span>
+                        <h2>Profile</h2>
+                    </div>
+
+                    <div class="sidebarOptions">
+                        <span class="material-icons">
+                            more_horiz
+                        </span>
+                        <h2>More</h2>
+                    </div>
+
+                    <button>Post</button>
+
+                    <div class="profile-button">
+                        <img class="profile-avatar" src="Images/Profile-picture 1.jpg">
+                        <div class="user-details">
+                            <p class="user-name">Cecilia Ndanu</p>
+                            <p class="user-link">@12evolving</p>
+                        </div>
+                        <span class="material-icons">
+                            more_horiz
+                        </span>
+                    </div>
+                </div>
+                </div>
+            <div class="main">
+                <div class="feed">
+                    <div class="feed-header">
+                        <button>Foryou</button>
+                        <button>Following</button>
+                        <span class="material-icons setting">
+                            settings
+                        </span>
+                    </div>
+        
+                    <!-- tweetbox starts -->
+                    <div class="tweetBox">
+                        <form>
+                            <div class="tweetbox__input">
+                                <div class="tweetbox__avatar">
+                                    <img src="Images/Profile-picture 1.jpg">
+                                </div>
+                                <input type="text" placeholder="What is happening?!">
+                            </div>
+                            <div class="tweetbox__input specials">
+                                <span class="material-icons image">
+                                    image
+                                </span>
+                                <span class="material-icons">
+                                    gif_box
+                                </span>
+                                <span class="material-icons">
+                                    format_list_bulleted
+                                </span>
+                                <span class="material-icons">
+                                    emoji_emotions
+                                </span>
+                                <span class="material-icons">
+                                    pending_actions
+                                </span>
+                                <span class="material-icons location">
+                                    location_on
+                                </span>
+                                <button>Post</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- tweetbox ends -->
+        
+                    <!-- post notification count start -->
+                    <div class="post__notifications">Show 385 posts</div>
+                    <!-- post notification count ends -->
+        
+                    <!-- posts begin -->
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="Images/tej.jpg">
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>TejfromHyper Pels</p>
+                                    <span>@OlomolaTejumade &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>No market/field is saturated in reality.At least not with quality.Mediocrity is the biggest part of whatever saturation there is.</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-retweet"></i>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>16</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <button></button>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>Danny Thompson</p>
+                                    <span class="material-icons verified">
+                                        verified
+                                    </span>
+                                    <span>@DThompsonDev &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>I have a joke on programming BUUUUUUT it only works on my computer.</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>53</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>41</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>251</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <button></button>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>Pratham</p>
+                                    <span class="material-icons verified">
+                                        verified
+                                    </span>
+                                    <span>@Prathkum &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <div>
+                                    This was my first online appearance in 2020.
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li><span>No fancy background</span></li>
+                                        <li><span>No aesthetic background</span></li>
+                                        <li><span>Not so confident</span></li>
+                                    </ul>
+                                </div>
+                                <div>I started with a laptop.</div>
+                                <div>Had no idea how useful having an online presence could be.</div>
+                                <div>There was a time where I used to think about quittting everything.</div>
+                                <div>I started self learning.</div>
+                                <div>Joined Twitter and started creating content.</div>
+                                <div>Built over 400K audience in 3 years.</div>
+                                <div>Learned and earned a lot.</div>
+                                <div>You can do it too!</div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                                <a href="">Show more</a>
+                                <img class="pratham_img" src="Images/bodyimg.jpg">
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>53</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>41</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>251</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="Images/intigriti.jpg">
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>INTIGRITI</p>
+                                    <span>@intigriti &#183 Dec 28</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>Without looking up, what's the most exploited vulnerability in the wild?😎</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>45</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>8</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>67</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="Images/tej.jpg">
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>TejfromHyper Pels</p>
+                                    <span>@OlomolaTejumade &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>No market/field is saturated in reality.At least not with quality.Mediocrity is the biggest part of whatever saturation there is.</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-retweet"></i>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>16</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <button></button>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>Danny Thompson</p>
+                                    <span class="material-icons verified">
+                                        verified
+                                    </span>
+                                    <span>@DThompsonDev &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>I have a joke on programming BUUUUUUT it only works on my computer.</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>53</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>41</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>251</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <button></button>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>Pratham</p>
+                                    <span class="material-icons verified">
+                                        verified
+                                    </span>
+                                    <span>@Prathkum &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <div>
+                                    This was my first online appearance in 2020.
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li><span>No fancy background</span></li>
+                                        <li><span>No aesthetic background</span></li>
+                                        <li><span>Not so confident</span></li>
+                                    </ul>
+                                </div>
+                                <div>I started with a laptop.</div>
+                                <div>Had no idea how useful having an online presence could be.</div>
+                                <div>There was a time where I used to think about quittting everything.</div>
+                                <div>I started self learning.</div>
+                                <div>Joined Twitter and started creating content.</div>
+                                <div>Built over 400K audience in 3 years.</div>
+                                <div>Learned and earned a lot.</div>
+                                <div>You can do it too!</div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                                <a href="">Show more</a>
+                                <img class="pratham_img" src="Images/bodyimg.jpg">
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>53</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>41</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>251</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="Images/intigriti.jpg">
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>INTIGRITI</p>
+                                    <span>@intigriti &#183 Dec 28</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>Without looking up, what's the most exploited vulnerability in the wild?😎</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>45</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>8</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>67</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="Images/tej.jpg">
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>TejfromHyper Pels</p>
+                                    <span>@OlomolaTejumade &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>No market/field is saturated in reality.At least not with quality.Mediocrity is the biggest part of whatever saturation there is.</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-retweet"></i>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>16</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <button></button>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>Danny Thompson</p>
+                                    <span class="material-icons verified">
+                                        verified
+                                    </span>
+                                    <span>@DThompsonDev &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>I have a joke on programming BUUUUUUT it only works on my computer.</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>53</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>41</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>251</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <button></button>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>Pratham</p>
+                                    <span class="material-icons verified">
+                                        verified
+                                    </span>
+                                    <span>@Prathkum &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <div>
+                                    This was my first online appearance in 2020.
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li><span>No fancy background</span></li>
+                                        <li><span>No aesthetic background</span></li>
+                                        <li><span>Not so confident</span></li>
+                                    </ul>
+                                </div>
+                                <div>I started with a laptop.</div>
+                                <div>Had no idea how useful having an online presence could be.</div>
+                                <div>There was a time where I used to think about quittting everything.</div>
+                                <div>I started self learning.</div>
+                                <div>Joined Twitter and started creating content.</div>
+                                <div>Built over 400K audience in 3 years.</div>
+                                <div>Learned and earned a lot.</div>
+                                <div>You can do it too!</div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                                <a href="">Show more</a>
+                                <img class="pratham_img" src="Images/bodyimg.jpg">
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>53</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>41</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>251</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="Images/intigriti.jpg">
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>INTIGRITI</p>
+                                    <span>@intigriti &#183 Dec 28</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>Without looking up, what's the most exploited vulnerability in the wild?😎</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>45</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>8</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>67</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="Images/tej.jpg">
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>TejfromHyper Pels</p>
+                                    <span>@OlomolaTejumade &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>No market/field is saturated in reality.At least not with quality.Mediocrity is the biggest part of whatever saturation there is.</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-solid fa-retweet"></i>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>16</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <button></button>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>Danny Thompson</p>
+                                    <span class="material-icons verified">
+                                        verified
+                                    </span>
+                                    <span>@DThompsonDev &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>I have a joke on programming BUUUUUUT it only works on my computer.</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>53</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>41</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>251</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <button></button>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>Pratham</p>
+                                    <span class="material-icons verified">
+                                        verified
+                                    </span>
+                                    <span>@Prathkum &#183 Dec 29</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <div>
+                                    This was my first online appearance in 2020.
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li><span>No fancy background</span></li>
+                                        <li><span>No aesthetic background</span></li>
+                                        <li><span>Not so confident</span></li>
+                                    </ul>
+                                </div>
+                                <div>I started with a laptop.</div>
+                                <div>Had no idea how useful having an online presence could be.</div>
+                                <div>There was a time where I used to think about quittting everything.</div>
+                                <div>I started self learning.</div>
+                                <div>Joined Twitter and started creating content.</div>
+                                <div>Built over 400K audience in 3 years.</div>
+                                <div>Learned and earned a lot.</div>
+                                <div>You can do it too!</div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                                <a href="">Show more</a>
+                                <img class="pratham_img" src="Images/bodyimg.jpg">
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>53</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>41</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>251</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="post">
+                        <div class="post__avatar">
+                            <img src="Images/intigriti.jpg">
+                        </div>
+                        <div class="post__body">
+                            <div class="post__header">
+                                <div class="post__header text">
+                                    <p>INTIGRITI</p>
+                                    <span>@intigriti &#183 Dec 28</span>
+                                </div>
+                                <span class="material-icons more">
+                                    more_horiz
+                                </span>
+                            </div>
+                            <div class="post__body text">
+                                <p>Without looking up, what's the most exploited vulnerability in the wild?😎</p>
+                            </div>
+                            <div class="post__footer">
+                                <i class="fa-regular fa-comment">
+                                    <p>45</p>
+                                </i>
+                                <i class="fa-solid fa-retweet">
+                                    <p>8</p>
+                                </i>
+                                <i class="fa-regular fa-heart">
+                                    <p>67</p>
+                                </i>
+                                <i class="fa-solid fa-square-poll-vertical">
+                                    <p>24K</p>
+                                </i>
+                                <div class="rightsection">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- posts  end -->
+                </div>
+            </div>
+            <div class="right-sidebar">
+                <div class="widgets__container">
+                    <div class="widgets__input">
+                        <span class="material-icons searchicon">
+                            search
+                        </span>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="widgets__widgetscontainer">
+                        <div class="tweet__links">
+                            <a href="https://twitter.com/intent/tweet?button_hashtag=WhatsHappening&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #WhatsHappening</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Dream ✨ <a href="https://t.co/aTS4ue8H0Y">pic.twitter.com/aTS4ue8H0Y</a></p>&mdash; Coder girl 👩‍💻 (@dev_maims) <a href="https://twitter.com/dev_maims/status/1741001940203642919?ref_src=twsrc%5Etfw">December 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
